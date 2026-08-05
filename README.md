@@ -1,6 +1,6 @@
 # Bank of Israel Exchange Rate API client
 
-Official **Bank of Israel** (Israel) daily exchange rates in Node.js / TypeScript — 14 currencies against the ILS, with history back to 1977. Zero dependencies, works in Node 18+, Bun, Deno, and edge runtimes (uses global `fetch`).
+Official **Bank of Israel** (Israel) daily exchange rates in Node.js / TypeScript — 14 currencies against the ILS, with history back to 1975. Zero dependencies, works in Node 18+, Bun, Deno, and edge runtimes (uses global `fetch`).
 
 These are the *published central bank rates* required for tax filings, customs valuations, audits, and compliant invoicing — not moving market rates. Every response carries the bank's own publication date.
 
