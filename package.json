@@ -1,6 +1,6 @@
 {
   "name": "bank-of-israel-exchange-rate",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "Official Bank of Israel (Israel) daily exchange rates — 14 currencies vs ILS, history since 1975. Zero-dependency Node.js/TypeScript client.",
   "keywords": [
     "boi",
