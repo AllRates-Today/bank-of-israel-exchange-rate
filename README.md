@@ -70,10 +70,10 @@ const pair = await getRate('USD', 'ILS', { apiKey: 'art_live_...' });
 {
   bank: 'boi',
   name: 'Bank of Israel',
-  rate_date: '2026-08-10',   // Bank of Israel's own publication date
+  rate_date: '2026-09-09',   // Bank of Israel's own publication date
   source: 'USD',
   target: 'ILS',
-  rate: 2.998,
+  rate: 3.017,
   rate_type: 'reference',
   derived: false,
   method: 'published',
@@ -98,9 +98,9 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'boi',
   name: 'Bank of Israel',
-  rate_date: '2026-08-10',
+  rate_date: '2026-09-09',
   rates: [
-    { "base": "USD", "quote": "ILS", "type": "reference", "value": 2.998 },
+    { "base": "USD", "quote": "ILS", "type": "reference", "value": 3.017 },
     // … the rest of the published table (14 currencies vs ILS)
   ],
   disclaimer: '…'
@@ -140,7 +140,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'bank-of-israel-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'ILS', from: '2026-01-01', to: '2026-08-10' },
+  { source: 'USD', target: 'ILS', from: '2026-01-01', to: '2026-09-09' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -153,11 +153,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'ILS',
   from: '2026-01-01',
-  to: '2026-08-10',
+  to: '2026-09-09',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-08-10', rate: 2.998, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-09-09', rate: 3.017, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
@@ -170,9 +170,9 @@ Pass `{ symbol: 'USD' }` instead of `source`/`target` to get the raw published r
 
 ## 🗺️ Currencies covered
 
-Bank of Israel currently publishes rates covering **15 currencies** (as of the latest table):
+Bank of Israel currently publishes rates covering **14 currencies** against the ILS (as of the latest table):
 
-`AUD` · `CAD` · `CHF` · `DKK` · `EGP` · `EUR` · `GBP` · `ILS` · `JOD` · `JPY` · `LBP` · `NOK` · `SEK` · `USD` · `ZAR`
+🇦🇺 `AUD` · 🇨🇦 `CAD` · 🇨🇭 `CHF` · 🇩🇰 `DKK` · 🇪🇬 `EGP` · 🇪🇺 `EUR` · 🇬🇧 `GBP` · 🇯🇴 `JOD` · 🇯🇵 `JPY` · 🇱🇧 `LBP` · 🇳🇴 `NOK` · 🇸🇪 `SEK` · 🇺🇸 `USD` · 🇿🇦 `ZAR`
 
 ## ⚖️ Published vs derived rates
 
@@ -235,6 +235,14 @@ getRate('USD', 'ILS', { apiKey: 'art_live_...' }).then((pair) => console.log(pai
 | `getLatestRates({ apiKey })` | Free | The central bank's full latest published table |
 | `getRatesForDate(date, { apiKey, source?, target? })` | Paid | The official table (or one pair) for a YYYY-MM-DD date |
 | `getHistory({ symbol \| source+target, from?, to? }, { apiKey })` | Paid | Daily series since 1975 |
+
+## 📥 Bulk data (no key)
+
+Need the whole archive rather than an API call? The same published tables are mirrored daily as open data:
+
+- Hugging Face: [AllRates/central-bank-exchange-rates](https://huggingface.co/datasets/AllRates/central-bank-exchange-rates) — one CSV per institution (`rates/boi.csv`)
+- Kaggle: [allratestoday/central-bank-exchange-rates](https://www.kaggle.com/datasets/allratestoday/central-bank-exchange-rates)
+- CDN JSON: `https://cdn.jsdelivr.net/gh/AllRates-Today/central-bank-exchange-rates@main/data/boi/latest.json`
 
 ## 🔗 Links
 
