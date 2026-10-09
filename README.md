@@ -40,23 +40,23 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 Today's full Bank of Israel table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-08** by Bank of Israel — 14 rates. Updated 2026-10-08.
+Published **2026-10-09** by Bank of Israel — 14 rates. Updated 2026-10-09.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | ILS | reference | 2.1427 |
-| CAD | ILS | reference | 2.1617 |
-| CHF | ILS | reference | 3.6981 |
-| DKK | ILS | reference | 0.4613 |
-| EGP | ILS | reference | 0.0588 |
-| EUR | ILS | reference | 3.448 |
-| GBP | ILS | reference | 4.0678 |
-| JOD | ILS | reference | 4.3491 |
-| JPY | ILS | reference | 0.019489 |
+| AUD | ILS | reference | 2.1315 |
+| CAD | ILS | reference | 2.147 |
+| CHF | ILS | reference | 3.6789 |
+| DKK | ILS | reference | 0.4588 |
+| EGP | ILS | reference | 0.0583 |
+| EUR | ILS | reference | 3.4291 |
+| GBP | ILS | reference | 4.044 |
+| JOD | ILS | reference | 4.3083 |
+| JPY | ILS | reference | 0.019292 |
 | LBP | ILS | reference | 0.00003 |
-| NOK | ILS | reference | 0.3219 |
-| SEK | ILS | reference | 0.3075 |
-| USD | ILS | reference | 3.084 |
+| NOK | ILS | reference | 0.319 |
+| SEK | ILS | reference | 0.3069 |
+| USD | ILS | reference | 3.055 |
 | ZAR | ILS | reference | 0.1847 |
 
 Source: [Official rates published by BOI, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/boi/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
