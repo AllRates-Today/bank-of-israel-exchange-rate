@@ -4,6 +4,8 @@
 [![license](https://img.shields.io/npm/l/bank-of-israel-exchange-rate.svg)](https://github.com/AllRates-Today/bank-of-israel-exchange-rate/blob/main/LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/bank-of-israel-exchange-rate)
 [![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg)](https://www.typescriptlang.org/)
+[![USD/ILS today](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fboi%3Fsource%3DUSD%26target%3DILS&query=%24.rate&label=USD%2FILS%20published%20by%20Bank%20of%20Israel&color=0A7E8C&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/boi/)
+[![rate date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fboi%3Fsource%3DUSD%26target%3DILS&query=%24.rate_date&label=rate%20date&color=555&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/boi/)
 
 **Official Bank of Israel (Israel) daily exchange rates for Node.js and TypeScript. The published central bank rates behind tax filings, customs valuations, audits, and compliant invoicing — not market estimates, but the numbers Bank of Israel itself prints, every business day.**
 
@@ -32,6 +34,33 @@ console.log(r.rate_date, r.rates.length); // the central bank's latest published
 ```
 
 The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+
+## 📈 Latest published table
+
+Today's full Bank of Israel table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
+
+<!-- daily-table:start -->
+Published **2026-10-08** by Bank of Israel — 14 rates. Updated 2026-10-08.
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| AUD | ILS | reference | 2.1427 |
+| CAD | ILS | reference | 2.1617 |
+| CHF | ILS | reference | 3.6981 |
+| DKK | ILS | reference | 0.4613 |
+| EGP | ILS | reference | 0.0588 |
+| EUR | ILS | reference | 3.448 |
+| GBP | ILS | reference | 4.0678 |
+| JOD | ILS | reference | 4.3491 |
+| JPY | ILS | reference | 0.019489 |
+| LBP | ILS | reference | 0.00003 |
+| NOK | ILS | reference | 0.3219 |
+| SEK | ILS | reference | 0.3075 |
+| USD | ILS | reference | 3.084 |
+| ZAR | ILS | reference | 0.1847 |
+
+Source: [Official rates published by BOI, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/boi/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+<!-- daily-table:end -->
 
 ## 🔑 Get your API key
 
