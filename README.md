@@ -37,7 +37,7 @@ const r = await fetch('https://allratestoday.com/api/open/central-bank/boi').the
 console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
 ```
 
-The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables and history.
+The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and is free to use with a visible, followable link where the rates are shown: `<a href="https://allratestoday.com">Exchange rates by AllRatesToday</a>` (terms: <https://allratestoday.com/terms/#attribution>). The client below uses the keyed API, which adds point-in-time tables and history; with a key the link is appreciated, not required.
 
 ## 📈 Latest published table
 
@@ -47,24 +47,24 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-20 by Bank of Israel — 14 rates. Updated 2026-10-20.</summary>
+<summary>Table as text: published 2026-10-21 by Bank of Israel — 14 rates. Updated 2026-10-21.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | ILS | reference | 2.171 |
-| CAD | ILS | reference | 2.2109 |
-| CHF | ILS | reference | 3.7675 |
-| DKK | ILS | reference | 0.4658 |
-| EGP | ILS | reference | 0.057 |
-| EUR | ILS | reference | 3.4822 |
-| GBP | ILS | reference | 4.1444 |
-| JOD | ILS | reference | 4.3812 |
-| JPY | ILS | reference | 0.019632 |
+| AUD | ILS | reference | 2.1737 |
+| CAD | ILS | reference | 2.2009 |
+| CHF | ILS | reference | 3.75 |
+| DKK | ILS | reference | 0.4645 |
+| EGP | ILS | reference | 0.0568 |
+| EUR | ILS | reference | 3.4722 |
+| GBP | ILS | reference | 4.1421 |
+| JOD | ILS | reference | 4.3598 |
+| JPY | ILS | reference | 0.019572 |
 | LBP | ILS | reference | 0.00003 |
-| NOK | ILS | reference | 0.3311 |
-| SEK | ILS | reference | 0.3132 |
-| USD | ILS | reference | 3.106 |
-| ZAR | ILS | reference | 0.1886 |
+| NOK | ILS | reference | 0.3302 |
+| SEK | ILS | reference | 0.3126 |
+| USD | ILS | reference | 3.091 |
+| ZAR | ILS | reference | 0.1883 |
 
 </details>
 
