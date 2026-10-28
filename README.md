@@ -47,24 +47,24 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-26 by Bank of Israel — 14 rates. Updated 2026-10-27.</summary>
+<summary>Table as text: published 2026-10-28 by Bank of Israel — 14 rates. Updated 2026-10-28.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | ILS | reference | 2.1634 |
-| CAD | ILS | reference | 2.1967 |
-| CHF | ILS | reference | 3.7257 |
-| DKK | ILS | reference | 0.461 |
-| EGP | ILS | reference | 0.0547 |
-| EUR | ILS | reference | 3.4462 |
-| GBP | ILS | reference | 4.1098 |
-| JOD | ILS | reference | 4.341 |
-| JPY | ILS | reference | 0.019557 |
+| AUD | ILS | reference | 2.1994 |
+| CAD | ILS | reference | 2.2271 |
+| CHF | ILS | reference | 3.7685 |
+| DKK | ILS | reference | 0.4656 |
+| EGP | ILS | reference | 0.0557 |
+| EUR | ILS | reference | 3.4801 |
+| GBP | ILS | reference | 4.1549 |
+| JOD | ILS | reference | 4.4121 |
+| JPY | ILS | reference | 0.019809 |
 | LBP | ILS | reference | 0.00003 |
-| NOK | ILS | reference | 0.3298 |
-| SEK | ILS | reference | 0.3095 |
-| USD | ILS | reference | 3.078 |
-| ZAR | ILS | reference | 0.1851 |
+| NOK | ILS | reference | 0.3363 |
+| SEK | ILS | reference | 0.3147 |
+| USD | ILS | reference | 3.128 |
+| ZAR | ILS | reference | 0.1876 |
 
 </details>
 
