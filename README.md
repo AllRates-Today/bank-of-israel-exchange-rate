@@ -31,29 +31,7 @@ Get a free API key at [allratestoday.com/register](https://allratestoday.com/reg
 The image is rendered live from the keyless endpoint, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-<details>
-<summary>Table as text: published 2026-11-13 by Bank of Israel — 14 rates. Updated 2026-11-13.</summary>
-
-| Base | Quote | Type | Rate |
-| --- | --- | --- | ---: |
-| AUD | ILS | reference | 2.1749 |
-| CAD | ILS | reference | 2.2439 |
-| CHF | ILS | reference | 3.8246 |
-| DKK | ILS | reference | 0.4735 |
-| EGP | ILS | reference | 0.0599 |
-| EUR | ILS | reference | 3.5394 |
-| GBP | ILS | reference | 4.2365 |
-| JOD | ILS | reference | 4.5124 |
-| JPY | ILS | reference | 0.020009 |
-| LBP | ILS | reference | 0.00004 |
-| NOK | ILS | reference | 0.3351 |
-| SEK | ILS | reference | 0.319 |
-| USD | ILS | reference | 3.199 |
-| ZAR | ILS | reference | 0.19 |
-
-</details>
-
-Source: [Official rates published by BOI, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/boi/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+_The table is filled in by the daily workflow._
 <!-- daily-table:end -->
 
 ## 📦 Installation
